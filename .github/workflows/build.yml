@@ -2,6 +2,9 @@ name: Build .NET project       # klucz i wartość
 
 on:                            # obiekt zagnieżdżony
   workflow_dispatch:
+env:
+  DOTNET_VERSION: 10.0.x
+  PROJECT_PATH: ../../Warpgr2.csproj
 
 jobs:
   build:
@@ -18,7 +21,13 @@ jobs:
       - name: Show directory
         run: pwd
 
-        - name: Setup .NET
+      - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: ${{ env.DOTNET_VERSION }}
+      
+      - name: Restore dependencies
+        shell: bash
+        run: dotnet restore "$PROJECT_PATH"
+
+      
