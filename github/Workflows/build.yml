@@ -1,0 +1,13 @@
+name: Build .NET project       # klucz i wartość
+
+on:                            # obiekt zagnieżdżony
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:                     # lista
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Show directory
+        run: pwd
