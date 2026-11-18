@@ -4,7 +4,7 @@ on:                            # obiekt zagnieżdżony
   workflow_dispatch:
 env:
   DOTNET_VERSION: 10.0.x
-  PROJECT_PATH: ../../Warpgr2.csproj
+  PROJECT_PATH: ./Warpgr2.csproj
 
 jobs:
   build:
