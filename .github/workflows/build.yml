@@ -10,7 +10,7 @@ on:
       - main
 env:
   DOTNET_VERSION: 10.0.x
-  PROJECT_PATH: ./Warpgr2.csproj
+  PROJECT_PATH: ./src/ProjectThatDoesNotExist/Project.csproj
 
 jobs:
   build:
@@ -31,6 +31,10 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: ${{ env.DOTNET_VERSION }}
+      
+      - name: Check repository structure
+        shell: bash
+        run: bash scripts/check-repository.sh "$PROJECT_PATH"
       
       - name: Restore dependencies
         shell: bash
