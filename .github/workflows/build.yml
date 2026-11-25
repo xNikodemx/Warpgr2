@@ -1,47 +1,13 @@
 name: Build .NET project       # klucz i wartość
 
-on:
+on:                            # obiekt zagnieżdżony
   workflow_dispatch:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-env:
-  DOTNET_VERSION: 10.0.x
-  PROJECT_PATH: ./Warpgr2.csproj
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:                     # lista
-      - name: Confirm runner
-        shell: bash
-        run: echo "Runner is ready"
-      
       - name: Checkout repository
         uses: actions/checkout@v4
-      
-      
       - name: Show directory
         run: pwd
-
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: ${{ env.DOTNET_VERSION }}
-      
-      - name: Restore dependencies
-        shell: bash
-        run: dotnet restore "$PROJECT_PATH"
-
-      - name: Build project
-        shell: bash
-        run: dotnet build "$PROJECT_PATH" --configuration Release --no-restore
-      
-      - name: Run project
-        shell: bash
-        run: dotnet run --project "$PROJECT_PATH" --configuration Release --no-build
-
-      
