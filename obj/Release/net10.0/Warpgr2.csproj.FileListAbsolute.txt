@@ -1,0 +1,15 @@
+Z:\warp07\bin\Release\net10.0\Warpgr2.exe
+Z:\warp07\bin\Release\net10.0\Warpgr2.deps.json
+Z:\warp07\bin\Release\net10.0\Warpgr2.runtimeconfig.json
+Z:\warp07\bin\Release\net10.0\Warpgr2.dll
+Z:\warp07\bin\Release\net10.0\Warpgr2.pdb
+Z:\warp07\obj\Release\net10.0\Warpgr2.GeneratedMSBuildEditorConfig.editorconfig
+Z:\warp07\obj\Release\net10.0\Warpgr2.AssemblyInfoInputs.cache
+Z:\warp07\obj\Release\net10.0\Warpgr2.AssemblyInfo.cs
+Z:\warp07\obj\Release\net10.0\Warpgr2.csproj.CoreCompileInputs.cache
+Z:\warp07\obj\Release\net10.0\Warpgr2.sourcelink.json
+Z:\warp07\obj\Release\net10.0\Warpgr2.dll
+Z:\warp07\obj\Release\net10.0\refint\Warpgr2.dll
+Z:\warp07\obj\Release\net10.0\Warpgr2.pdb
+Z:\warp07\obj\Release\net10.0\Warpgr2.genruntimeconfig.cache
+Z:\warp07\obj\Release\net10.0\ref\Warpgr2.dll
