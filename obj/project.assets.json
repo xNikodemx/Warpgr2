@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Z:\\warp07\\Warpgr2\\Warpgr2.csproj",
+      "projectUniqueName": "Z:\\warp07\\Warpgr2.csproj",
       "projectName": "Warpgr2",
-      "projectPath": "Z:\\warp07\\Warpgr2\\Warpgr2.csproj",
+      "projectPath": "Z:\\warp07\\Warpgr2.csproj",
       "packagesPath": "C:\\Users\\s37406\\.nuget\\packages\\",
-      "outputPath": "Z:\\warp07\\Warpgr2\\obj\\",
+      "outputPath": "Z:\\warp07\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\s37406\\AppData\\Roaming\\NuGet\\NuGet.Config"
